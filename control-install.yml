@@ -70,10 +70,10 @@
         virtualenv_python: python3.4
 
     - name: install apache module from ansible-galaxy
-      command: ansible-galaxy install --ignore-errors geerlingguy.apache
+      command: ansible-galaxy install geerlingguy.apache
 
     - name: install epel module from ansible-galaxy
-      command: ansible-galaxy install --ignore-errors geerlingguy.repo-epel
+      command: ansible-galaxy install geerlingguy.repo-epel
 
     - name: checkout git-crypt
       git:
